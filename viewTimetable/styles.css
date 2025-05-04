@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #43cea2, #185a9d);
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
     margin: 0;
     padding: 0;
     display: flex;
@@ -34,8 +34,24 @@ body {
     font-size: 1rem;
   }
   
+  button {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
+    background: #fcb69f;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #e69a7f;
+  }
+  
   #timetableGrid {
-    margin-top: 20px;
+    margin-top: 30px;
     overflow-x: auto;
   }
   
@@ -49,31 +65,11 @@ body {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
-  }
-  
-  td select {
-    margin-bottom: 5px;
-    width: 100%;
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 12px;
-    width: 100%;
-    background: #43cea2;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: #2b8f7b;
+    vertical-align: top;
   }
   
   .message {
-    margin-top: 15px;
+    margin-top: 20px;
     text-align: center;
     font-weight: bold;
   }

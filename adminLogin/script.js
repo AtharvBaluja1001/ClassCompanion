@@ -1,3 +1,21 @@
+(function () {
+  function getCookie(name) {
+    const cookies = document.cookie.split("; ");
+    for (let cookie of cookies) {
+      const [key, value] = cookie.split("=");
+      if (key === name) {
+        return value;
+      }
+    }
+    return null;
+  }
+
+  const username = getCookie("status");
+  if (username) {
+    window.location.href = "/admin";
+  }
+})();
+
 async function sha256(message) {
     const msgBuffer = new TextEncoder().encode(message);
     const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);

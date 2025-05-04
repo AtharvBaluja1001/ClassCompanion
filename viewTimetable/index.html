@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Add Timetable</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>View Timetable</title>
+  <link rel="stylesheet" href="styles.css" />
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Add Timetable</h1>
-    <form id="timetableForm">
+    <h1>View Timetable</h1>
+    <form id="viewForm">
       <select id="country" required>
         <option value="United States">United States</option>
         <option value="Afghanistan">Afghanistan</option>
@@ -263,11 +263,11 @@
         <option value="">Select Class</option>
       </select>
 
-      <div id="timetableGrid" style="display:none;"></div>
-
-      <button type="submit">Save Timetable</button>
-      <p id="message" class="message"></p>
+      <button type="submit">Load Timetable</button>
     </form>
+
+    <div id="timetableGrid"></div>
+    <p id="message" class="message"></p>
   </div>
 
   <script>
